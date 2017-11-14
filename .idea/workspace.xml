@@ -91,11 +91,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="childfilterselector_.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="childfilterselector_.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/childfilterselector_.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2769409">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+            <state vertical-scroll-proportion="-13.090909">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formattributeselector_.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/formattributeselector_.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.72421783">
+              <caret line="41" column="42" selection-start-line="40" selection-start-column="72" selection-end-line="41" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -126,6 +136,7 @@
         <option value="$PROJECT_DIR$/jquery-1.html" />
         <option value="$PROJECT_DIR$/jQuery-2.html" />
         <option value="$PROJECT_DIR$/basicfilterselector_.html" />
+        <option value="$PROJECT_DIR$/formattributeselector_.html" />
       </list>
     </option>
   </component>
@@ -351,8 +362,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/childfilterselector_.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2769409">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        <state vertical-scroll-proportion="-13.090909">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formattributeselector_.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.72421783">
+          <caret line="41" column="42" selection-start-line="40" selection-start-column="72" selection-end-line="41" selection-end-column="42" />
           <folding />
         </state>
       </provider>
