@@ -71,11 +71,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="visiblefilterselector_.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="visiblefilterselector_.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visiblefilterselector_.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41714948">
+            <state vertical-scroll-proportion="-10.909091">
               <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attrbutefilterselector_.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/attrbutefilterselector_.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.0301275">
+              <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -315,8 +325,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visiblefilterselector_.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41714948">
+        <state vertical-scroll-proportion="-10.909091">
           <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attrbutefilterselector_.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0301275">
+          <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
           <folding />
         </state>
       </provider>
