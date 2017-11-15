@@ -1,0 +1,53 @@
+1.jQuery 是Javascript的一个函数库，非常方便非常主流。
+2.利用Jquery开发的步骤：
+1）导入jQuery库
+2）在$(function(){})中编写jQuery代码
+
+<script type="text/javascript" src="jquery-1.7.2.js"></script>
+<script type="text/javascript">
+$(function(){
+       $("#btn1").click(function(){
+       //使所有的可用的单行文本框的value值变为zxq
+       $(":text:enabled").val("zxq");
+       });
+})
+</script>
+
+3.jQuery对象 vs DOM 对象
+1）jQuery对象不能使用DOM对象的属性和方法，反之，DOM对象也不能使用jQuery对象的属性和方法
+2) jQuery对象是一个DOM数组对象，所以可以使用下标的方式转为DOM对象
+
+var $btn=$("button");
+var btn=$btn[0];
+
+3)jQuery对象是使用$()保证DOM对象后产生的对象：
+$("select :selected").each(function(){
+          alert($(this).val())
+});
+
+4.jQuery的选择器
+1）选取被选中的Select的option需要选取子节点的方式
+$("select[name='test'] :selected").each(function(){
+
+}};
+
+2) jQuery可以综合使用
+3）如果选择器搞不定，可以借助方法
+
+5.jQuery对象的几个方法
+1）val():获取或设置表单元素的value属性值
+//设置值
+$(":text:enabled").val("zxq");
+//获取值
+alert($(":text:enabled").val());
+2）attr（）和val（）方法类似
+attr(name,val）为name属性赋值为val
+attr(name)获取name属性值
+3）each（）：对jquery对象进行遍历，其参数为function，函数内部的this是正在遍历的dom对象
+$("select :selected").each(function(){
+    alert(this.value);
+})
+4) text() 和 val（）方法类似
+
+text()获取元素节点的文本子节点的值
+text(str):设置元素节点的文本子节点的值
