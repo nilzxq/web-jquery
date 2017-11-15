@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<!--用户名:<input id="userName" >-->
+<!--密码:<input  class='password' type="password">-->
+<!--密码:<input class='password' type="password">-->
+<!--<button onclick="sub()">注册</button>-->
+<!--<script>-->
+    <!--var userName,-->
+            <!--password,-->
+            <!--password2;-->
+    <!--function sub() {-->
+        <!--userName = document.getElementById('userName').value;-->
+        <!--password = document.getElementsByClassName('password')[0].value;-->
+        <!--password2 = document.getElementsByClassName('password')[1].value;-->
+
+        <!--if (userName.length < 4 || userName.length > 10) {-->
+            <!--alert('用户名长度为4~10位');-->
+            <!--return;-->
+        <!--}-->
+
+        <!--if (!password || !password2) {-->
+            <!--alert('密码为空');-->
+            <!--return;-->
+        <!--}-->
+
+        <!--if (password !== password2) {-->
+            <!--alert('两次密码输入不一样,请重新输入');-->
+            <!--return;-->
+        <!--}-->
+
+        <!--alert('注册成功');-->
+
+    <!--}-->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+<!--</script>-->
+用户名:<input id="userName" >
+昵称：<input id="nickname">
+密码:<input   name="password">
+再次确认密码:<input  name="repassword">
+邮箱：<input type="email" name="email">
+手机号：<input type="text" name="phone">
+<button name="Submit">注册</button>
+<script type="text/javascript" src="jquery-1.7.2.js"></script>
+<script type="text/javascript">
+    //循环获取所有的input框
+    //定义全局变量
+    var NI=false;
+    var US=false;
+    var PS=false;
+    var RPS=false;
+    var EM=false;
+    var PH=false;
+    //给每个input绑定获取焦点事件
+    //昵称
+    $('input[name="nickname"]').focus(function(){
+        $(this).next().css({color:'#979898',display:'block'});
+        $(this).next().html('请输入常用昵称');
+    });
+    //账户
+    $('input[name="username"]').focus(function(){
+        $(this).next().css({color:'#979898',display:'block'});
+        $(this).next().html('请输入6-16个字符,首字符不能为数字');
+    });
+    //密码
+    $('input[name="password"]').focus(function(){
+        $(this).next().css({color:'#979898',display:'block'});
+        $(this).next().html('请输入6-16个字符,首字符不能为数字');
+    });
+    //重复密码
+    $('input[name="repassword"]').focus(function(){
+        $(this).next().css({color:'#979898',display:'block'});
+        $(this).next().html('请再次输入密码');
+    });
+    //邮箱
+    $('input[name="email"]').focus(function(){
+        $(this).next().css({color:'#979898',display:'block'});
+        $(this).next().html('请输入常用昵称');
+    });
+    //电话
+    $('input[name="phone"]').focus(function(){
+        $(this).next().css({color:'#979898',display:'block'});
+        $(this).next().html('请输入常用手机号码');
+    });
+    //给每个input绑定丧失焦点事件
+    //昵称
+    $('input[name="nickname"]').blur(function(){
+        var v=$(this).val();
+        var reg=/^.{1,16}$/;
+        if(!reg.test(v)){
+            $(this).next().html('✘输入有误,请重新输入');
+            $(this).next().css('color','red');
+        }else{
+            $(this).next().html('✔');
+            $(this).next().css('color','green');
+            NI=true;
+        }
+    });
+    //账户
+    $('input[name="username"]').blur(function(){
+        var v=$(this).val();
+        var input=$(this);
+        var reg=/^\w{6,16}$/;
+        if(!reg.test(v)){
+            input.next().html('✘输入有误,请重新输入');
+            input.next().css('color','red');
+        }else{
+//发送ajax判断账户是否可用
+            $.post('{:U("Admin/Admin/select")}',{username:v},function(data){
+                if(data==0){
+                    input.next().html('✘用户名已存在');
+                    input.next().css('color','red');
+                }else{
+                    input.next().html('✔');
+                    input.next().css('color','green');
+                    US=true;
+                }
+            });
+        }
+    });
+    //密码
+    $('input[name="password"]').blur(function(){
+        var v=$(this).val();
+        var reg=/^[a-zA-Z]{1}\w{5,15}$/;
+        if(!reg.test(v)){
+            $(this).next().html('✘输入有误,请重新输入');
+            $(this).next().css('color','red');
+        }else{
+            $(this).next().html('✔');
+            $(this).next().css('color','green');
+            PS=true;
+        }
+    });
+    //重复密码
+    $('input[name="repassword"]').blur(function(){
+        var rv=$(this).val();
+        var v=$('input[name=password]').val();
+        if(rv !== v){
+            $(this).next().html('✘重复密码输入有误');
+            $(this).next().css('color','red');
+        }else{
+            $(this).next().html('✔');
+            $(this).next().css('color','green');
+            RPS=true;
+        }
+    });
+    //邮箱
+    $('input[name=email]').blur(function(){
+        var v=$(this).val();
+        var reg = /^\w+@\w+\.(com|cn|com\.cn|org|hk|edu|net)$/;
+        if(!reg.test(v)){
+            $(this).next().html('✘输入有误,请重新输入');
+            $(this).next().css('color','red');
+        }else{
+            $(this).next().html('✔');
+            $(this).next().css('color','green');
+            EM=true;
+        }
+    });
+    //电话
+    $('input[name=phone]').blur(function(){
+        var v=$(this).val();
+        var reg=/^1\d{10}$/;
+        if(!reg.test(v)){
+            $(this).next().html('✘输入有误,请重新输入');
+            $(this).next().css('color','red');
+        }else{
+            $(this).next().html('✔');
+            $(this).next().css('color','green');
+            PH=true;
+        }
+    });
+    //绑定表单提交事件
+    $('button[name=Submit]').click(function(){
+//alert('dasd');
+        $("input").each(function(){
+            $(this).next().css('display','block'); //循环让每个input框后面的span显示出来
+        });
+//触发丧失焦点事件
+        $('input[name=nickname]').trigger('blur');
+        $('input[name=username]').trigger('blur');
+        $('input[name=password]').trigger('blur');
+        $('input[name=repassword]').trigger('blur');
+        $('input[name=email]').trigger('blur');
+        $('input[name=phone]').trigger('blur');
+        if(NI && US && PS && RPS && EM && PH){
+            return true;
+        }
+        return false;
+    });
+</script>
+</body>
+
+</html>

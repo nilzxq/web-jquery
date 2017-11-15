@@ -31,46 +31,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basicfilterselector_.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basicfilterselector_.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.375">
-              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contentfilterselector_.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contentfilterselector_.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.363636">
-              <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="visiblefilterselector_.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/visiblefilterselector_.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.909091">
-              <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="attrbutefilterselector_.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/attrbutefilterselector_.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-44.363636">
-              <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="childfilterselector_.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/childfilterselector_.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,8 +44,8 @@
       <file leaf-file-name="formattributeselector_.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/formattributeselector_.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.818182">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+            <state vertical-scroll-proportion="-3.6363637">
+              <caret line="5" column="70" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -111,11 +71,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dom-1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dom-1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dom-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4903846">
-              <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+            <state vertical-scroll-proportion="-7.125">
+              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form-identity.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form-identity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.969697">
+              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form-identity-5g.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form-identity-5g.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.242424">
+              <caret line="217" column="14" selection-start-line="217" selection-start-column="14" selection-end-line="217" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form-identity-test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/form-identity-test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.25028968">
+              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="html5.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html5.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.818182">
+              <caret line="8" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -136,10 +138,15 @@
         <option value="$PROJECT_DIR$/jquery-1.html" />
         <option value="$PROJECT_DIR$/jQuery-2.html" />
         <option value="$PROJECT_DIR$/basicfilterselector_.html" />
-        <option value="$PROJECT_DIR$/formattributeselector_.html" />
         <option value="$PROJECT_DIR$/note" />
         <option value="$PROJECT_DIR$/ex_1_.html" />
         <option value="$PROJECT_DIR$/dom-1.html" />
+        <option value="$PROJECT_DIR$/formattributeselector_.html" />
+        <option value="$PROJECT_DIR$/form-identity.html" />
+        <option value="$PROJECT_DIR$/form-identity-5g.html" />
+        <option value="$PROJECT_DIR$/html5.css.html" />
+        <option value="$PROJECT_DIR$/html5.css" />
+        <option value="$PROJECT_DIR$/form-identity-test.html" />
       </list>
     </option>
   </component>
@@ -199,6 +206,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-jquery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-jquery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -210,6 +231,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\web\web-jquery\img" />
       <recent name="F:\web\web-jquery" />
     </key>
   </component>
@@ -261,7 +283,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -382,14 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/formattributeselector_.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.818182">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/note">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -408,8 +422,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dom-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4903846">
-          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        <state vertical-scroll-proportion="-7.125">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formattributeselector_.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6363637">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form-identity-5g.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.242424">
+          <caret line="217" column="14" selection-start-line="217" selection-start-column="14" selection-end-line="217" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form-identity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.969697">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html5.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.818182">
+          <caret line="8" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form-identity-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25028968">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
           <folding />
         </state>
       </provider>
