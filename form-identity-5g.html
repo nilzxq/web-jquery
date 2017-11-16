@@ -206,20 +206,6 @@ endPointId<input class="form-control" name="endPointId" id="endPointId" type="te
         onclick="saveData()">save</button>
 <script type="text/javascript" src="jquery-1.7.2.js"></script>
 <script type="text/javascript">
-    var nfServiceTypeId;
-    var vnfAffiliationId;
-    var endPointId;
-function saveData(){
-    nfServiceTypeId=$("#nfServiceTypeId");
-
-        if(nfServiceTypeId.validity.patternMismatch){
-            nfServiceTypeId.setCustomValidity("请以“-VNFC”结尾");
-            alert("请以“-VNFC”结尾");
-        }else{
-            nfServiceTypeId.setCustomValidity("");
-        }
-
-}
 
 </script>
 </body>
