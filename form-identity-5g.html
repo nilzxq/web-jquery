@@ -36,9 +36,9 @@
         <!--alert('注册成功');-->
 
     <!--}-->
-    <!-- -->
-    <!-- -->
-    <!-- -->
+
+
+
 <!--</script>-->
 <!--用户名:<input id="userName" >-->
 <!--昵称：<input id="nickname">-->
@@ -198,15 +198,93 @@
 nfServiceTypeId<input id="nfServiceTypeId" class="form-control"
        name="vnfcTypeId" type="text" placeholder="格式：xxx-VNFC"
        pattern="/.+-VNFC$/" />
+
 vnfAffiliationId<input class="form-control" name="vnfAffiliation" id="vnfAffiliationId" type="text" placeholder="格式：xxx-VNF"
-       pattern="/.+-VNF:$/"/>
+       pattern="/.+-VNF$/"/>
 endPointId<input class="form-control" name="endPointId" id="endPointId" type="text" placeholder="格式：xxx--PORTAL"
-       pattern="/.+-PORTAL:$/"/>
+       pattern="/.+-PORTAL$/"/>
 <button id="saveData" style="background-color: #ddd"
-        onclick="saveData()">save</button>
+        name="saveData">save</button>
 <script type="text/javascript" src="jquery-1.7.2.js"></script>
 <script type="text/javascript">
+//var nfServiceTypeId, vnfAffiliationId,endPointId;
+//    function saveData() {
+//        nfServiceTypeId = $("#nfServiceTypeId").val();
+//        vnfAffiliationId = $("#vnfAffiliationId").val();
+//        endPointId = $("#endPointId").val();
+//    }
+//循环获取所有的input框
+//定义全局变量
+    var VNFCI=false;
+    var VNFI=false;
+    var ENDPOINTI=false;
+    //给每个input绑定获取焦点事件
+    //VNFC
+    $('input[name="vnfcTypeId"]').focus(function(){
+        $(this).next().css({color:'#979898',display:'block'});
+        $(this).next().html("请以'-VNFC'结尾");
+    });
+    //VNF
+$('input[name="vnfAffiliation"]').focus(function(){
+    $(this).next().css({color:'#979898',display:'block'});
+    $(this).next().html("请以'-VNF'结尾");
+});
+//endPointId
+$('input[name="endPointId"]').focus(function(){
+    $(this).next().css({color:'#979898',display:'block'});
+    $(this).next().html("请以'-PORTAL'结尾");
+});
 
+
+    //给每个input绑定丧失焦点事件
+//VNFC
+$('input[name="vnfcTypeId"]').blur(function () {
+    var v=$(this).val();
+    var reg=/.+-VNFC$/;
+    if(!reg.test(v)){
+        $(this).next().html('✘输入有误,请重新输入');
+        $(this).next().css('color','red');
+    }else{
+        $(this).next().html('✔');
+        $(this).next().css('color','green');
+         VNFCI=true;
+
+    }
+});
+//VNF
+$('input[name="vnfAffiliation"]').blur(function () {
+    var v=$(this).val();
+    var reg=/.+-VNF$/;
+    if(!reg.test(v)){
+        $(this).next().html('✘输入有误,请重新输入');
+        $(this).next().css('color','red');
+    }else{
+        $(this).next().html('✔');
+        $(this).next().css('color','green');
+        VNFI=true;
+
+    }
+});
+    //endPoint
+$('input[name="endPointId"]').blur(function () {
+    var v=$(this).val();
+    var reg=/.+-PORTAL$/;
+    if(!reg.test(v)){
+        $(this).next().html('✘输入有误,请重新输入');
+        $(this).next().css('color','red');
+    }else{
+        $(this).next().html('✔');
+        $(this).next().css('color','green');
+        ENDPOINTI=true;
+    }
+});
+
+    //绑定表单提交事件
+    $('button[name=saveData]').click(function(){
+        $("input").each(function () {
+            $(this).next().css('display','block');
+        });
+    });
 </script>
 </body>
 
