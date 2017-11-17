@@ -2,290 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css" rel="external nofollow" />
+    <link rel="stylesheet" href="Bootstrap/css/bootstrapValidator.css" rel="external nofollow" />
+    <script type="text/javascript" src="jQuery/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Bootstrap/js/bootstrapValidator.js"></script>
 </head>
 
 <body>
-<!--用户名:<input id="userName" >-->
-<!--密码:<input  class='password' type="password">-->
-<!--密码:<input class='password' type="password">-->
-<!--<button onclick="sub()">注册</button>-->
-<!--<script>-->
-    <!--var userName,-->
-            <!--password,-->
-            <!--password2;-->
-    <!--function sub() {-->
-        <!--userName = document.getElementById('userName').value;-->
-        <!--password = document.getElementsByClassName('password')[0].value;-->
-        <!--password2 = document.getElementsByClassName('password')[1].value;-->
 
-        <!--if (userName.length < 4 || userName.length > 10) {-->
-            <!--alert('用户名长度为4~10位');-->
-            <!--return;-->
-        <!--}-->
+<div class="container">
+    <form id="defaultForm" method="post" class="form-horizontal" action="form-identity-5g.html">
+        <div class="form-group">
+            <label class="col-sm-2 control-label"
+                   style="color: #333; font-size: 16px;">NFService TypeId</label>
 
-        <!--if (!password || !password2) {-->
-            <!--alert('密码为空');-->
-            <!--return;-->
-        <!--}-->
+            <div class="col-sm-4">
+                <input id="nfServiceTypeId" class="form-control"
+                       name="vnfcTypeId" type="text" placeholder="格式：xxx-VNFC"/>
+            </div>
+            <label class="col-sm-2 control-label"
+                   style="color: #333; font-size: 16px;">NFaffiliation</label>
 
-        <!--if (password !== password2) {-->
-            <!--alert('两次密码输入不一样,请重新输入');-->
-            <!--return;-->
-        <!--}-->
+            <div class="col-sm-4">
+                <input class="form-control" name="vnfAffiliation" id="vnfAffiliationId" type="text"
+                       placeholder="格式：xxx-VNF"/>
+            </div>
+        </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label"
+                       style="color: #333; font-size: 16px;">endPointId</label>
 
-        <!--alert('注册成功');-->
+                <div class="col-sm-10">
+                    <input class="form-control" name="endPointId" id="endPointId" type="text"
+                           placeholder="格式：xxx--PORTAL"/>
+                </div>
+            </div>
 
-    <!--}-->
-
-
-
-<!--</script>-->
-<!--用户名:<input id="userName" >-->
-<!--昵称：<input id="nickname">-->
-<!--密码:<input   name="password">-->
-<!--再次确认密码:<input  name="repassword">-->
-<!--邮箱：<input type="email" name="email">-->
-<!--手机号：<input type="text" name="phone">-->
-<!--<button name="Submit">注册</button>-->
-<!--<script type="text/javascript" src="jquery-1.7.2.js"></script>-->
-<!--<script type="text/javascript">-->
-    <!--//循环获取所有的input框-->
-    <!--//定义全局变量-->
-    <!--var NI=false;-->
-    <!--var US=false;-->
-    <!--var PS=false;-->
-    <!--var RPS=false;-->
-    <!--var EM=false;-->
-    <!--var PH=false;-->
-    <!--//给每个input绑定获取焦点事件-->
-    <!--//昵称-->
-    <!--$('input[name="nickname"]').focus(function(){-->
-        <!--$(this).next().css({color:'#979898',display:'block'});-->
-        <!--$(this).next().html('请输入常用昵称');-->
-    <!--});-->
-    <!--//账户-->
-    <!--$('input[name="username"]').focus(function(){-->
-        <!--$(this).next().css({color:'#979898',display:'block'});-->
-        <!--$(this).next().html('请输入6-16个字符,首字符不能为数字');-->
-    <!--});-->
-    <!--//密码-->
-    <!--$('input[name="password"]').focus(function(){-->
-        <!--$(this).next().css({color:'#979898',display:'block'});-->
-        <!--$(this).next().html('请输入6-16个字符,首字符不能为数字');-->
-    <!--});-->
-    <!--//重复密码-->
-    <!--$('input[name="repassword"]').focus(function(){-->
-        <!--$(this).next().css({color:'#979898',display:'block'});-->
-        <!--$(this).next().html('请再次输入密码');-->
-    <!--});-->
-    <!--//邮箱-->
-    <!--$('input[name="email"]').focus(function(){-->
-        <!--$(this).next().css({color:'#979898',display:'block'});-->
-        <!--$(this).next().html('请输入常用昵称');-->
-    <!--});-->
-    <!--//电话-->
-    <!--$('input[name="phone"]').focus(function(){-->
-        <!--$(this).next().css({color:'#979898',display:'block'});-->
-        <!--$(this).next().html('请输入常用手机号码');-->
-    <!--});-->
-    <!--//给每个input绑定丧失焦点事件-->
-    <!--//昵称-->
-    <!--$('input[name="nickname"]').blur(function(){-->
-        <!--var v=$(this).val();-->
-        <!--var reg=/^.{1,16}$/;-->
-        <!--if(!reg.test(v)){-->
-            <!--$(this).next().html('✘输入有误,请重新输入');-->
-            <!--$(this).next().css('color','red');-->
-        <!--}else{-->
-            <!--$(this).next().html('✔');-->
-            <!--$(this).next().css('color','green');-->
-            <!--NI=true;-->
-        <!--}-->
-    <!--});-->
-    <!--//账户-->
-    <!--$('input[name="username"]').blur(function(){-->
-        <!--var v=$(this).val();-->
-        <!--var input=$(this);-->
-        <!--var reg=/^\w{6,16}$/;-->
-        <!--if(!reg.test(v)){-->
-            <!--input.next().html('✘输入有误,请重新输入');-->
-            <!--input.next().css('color','red');-->
-        <!--}else{-->
-<!--//发送ajax判断账户是否可用-->
-            <!--$.post('{:U("Admin/Admin/select")}',{username:v},function(data){-->
-                <!--if(data==0){-->
-                    <!--input.next().html('✘用户名已存在');-->
-                    <!--input.next().css('color','red');-->
-                <!--}else{-->
-                    <!--input.next().html('✔');-->
-                    <!--input.next().css('color','green');-->
-                    <!--US=true;-->
-                <!--}-->
-            <!--});-->
-        <!--}-->
-    <!--});-->
-    <!--//密码-->
-    <!--$('input[name="password"]').blur(function(){-->
-        <!--var v=$(this).val();-->
-        <!--var reg=/^[a-zA-Z]{1}\w{5,15}$/;-->
-        <!--if(!reg.test(v)){-->
-            <!--$(this).next().html('✘输入有误,请重新输入');-->
-            <!--$(this).next().css('color','red');-->
-        <!--}else{-->
-            <!--$(this).next().html('✔');-->
-            <!--$(this).next().css('color','green');-->
-            <!--PS=true;-->
-        <!--}-->
-    <!--});-->
-    <!--//重复密码-->
-    <!--$('input[name="repassword"]').blur(function(){-->
-        <!--var rv=$(this).val();-->
-        <!--var v=$('input[name=password]').val();-->
-        <!--if(rv !== v){-->
-            <!--$(this).next().html('✘重复密码输入有误');-->
-            <!--$(this).next().css('color','red');-->
-        <!--}else{-->
-            <!--$(this).next().html('✔');-->
-            <!--$(this).next().css('color','green');-->
-            <!--RPS=true;-->
-        <!--}-->
-    <!--});-->
-    <!--//邮箱-->
-    <!--$('input[name=email]').blur(function(){-->
-        <!--var v=$(this).val();-->
-        <!--var reg = /^\w+@\w+\.(com|cn|com\.cn|org|hk|edu|net)$/;-->
-        <!--if(!reg.test(v)){-->
-            <!--$(this).next().html('✘输入有误,请重新输入');-->
-            <!--$(this).next().css('color','red');-->
-        <!--}else{-->
-            <!--$(this).next().html('✔');-->
-            <!--$(this).next().css('color','green');-->
-            <!--EM=true;-->
-        <!--}-->
-    <!--});-->
-    <!--//电话-->
-    <!--$('input[name=phone]').blur(function(){-->
-        <!--var v=$(this).val();-->
-        <!--var reg=/^1\d{10}$/;-->
-        <!--if(!reg.test(v)){-->
-            <!--$(this).next().html('✘输入有误,请重新输入');-->
-            <!--$(this).next().css('color','red');-->
-        <!--}else{-->
-            <!--$(this).next().html('✔');-->
-            <!--$(this).next().css('color','green');-->
-            <!--PH=true;-->
-        <!--}-->
-    <!--});-->
-    <!--//绑定表单提交事件-->
-    <!--$('button[name=Submit]').click(function(){-->
-<!--//alert('dasd');-->
-        <!--$("input").each(function(){-->
-            <!--$(this).next().css('display','block'); //循环让每个input框后面的span显示出来-->
-        <!--});-->
-<!--//触发丧失焦点事件-->
-        <!--$('input[name=nickname]').trigger('blur');-->
-        <!--$('input[name=username]').trigger('blur');-->
-        <!--$('input[name=password]').trigger('blur');-->
-        <!--$('input[name=repassword]').trigger('blur');-->
-        <!--$('input[name=email]').trigger('blur');-->
-        <!--$('input[name=phone]').trigger('blur');-->
-        <!--if(NI && US && PS && RPS && EM && PH){-->
-            <!--return true;-->
-        <!--}-->
-        <!--return false;-->
-    <!--});-->
-<!--</script>-->
-nfServiceTypeId<input id="nfServiceTypeId" class="form-control"
-       name="vnfcTypeId" type="text" placeholder="格式：xxx-VNFC"
-       pattern="/.+-VNFC$/" />
-
-vnfAffiliationId<input class="form-control" name="vnfAffiliation" id="vnfAffiliationId" type="text" placeholder="格式：xxx-VNF"
-       pattern="/.+-VNF$/"/>
-endPointId<input class="form-control" name="endPointId" id="endPointId" type="text" placeholder="格式：xxx--PORTAL"
-       pattern="/.+-PORTAL$/"/>
-<button id="saveData" style="background-color: #ddd"
-        name="saveData">save</button>
-<script type="text/javascript" src="jquery-1.7.2.js"></script>
+        <div class="form-group">
+            <div class="col-lg-9 col-lg-offset-3">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+    </form>
+</div>
 <script type="text/javascript">
-//var nfServiceTypeId, vnfAffiliationId,endPointId;
-//    function saveData() {
-//        nfServiceTypeId = $("#nfServiceTypeId").val();
-//        vnfAffiliationId = $("#vnfAffiliationId").val();
-//        endPointId = $("#endPointId").val();
-//    }
-//循环获取所有的input框
-//定义全局变量
-    var VNFCI=false;
-    var VNFI=false;
-    var ENDPOINTI=false;
-    //给每个input绑定获取焦点事件
-    //VNFC
-    $('input[name="vnfcTypeId"]').focus(function(){
-        $(this).next().css({color:'#979898',display:'block'});
-        $(this).next().html("请以'-VNFC'结尾");
-    });
-    //VNF
-$('input[name="vnfAffiliation"]').focus(function(){
-    $(this).next().css({color:'#979898',display:'block'});
-    $(this).next().html("请以'-VNF'结尾");
-});
-//endPointId
-$('input[name="endPointId"]').focus(function(){
-    $(this).next().css({color:'#979898',display:'block'});
-    $(this).next().html("请以'-PORTAL'结尾");
-});
+    $(document).ready(function() {
+        /**
+         * 下面是进行插件初始化
+         * 你只需传入相应的键值对
+         * */
+        $('#defaultForm').bootstrapValidator({
+            message: 'This value is not valid',
+            feedbackIcons: {/*输入框不同状态，显示图片的样式*/
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {/*验证*/
+                vnfcTypeId: {/*键名vnfcTypeId和input name值对应*/
+                    message: 'The NFService TypeId is not valid',
+                    validators: {
+//                        notEmpty: {/*非空提示*/
+//                            message: '不能为空'
+//                        },
+                        regexp: {/* 只需加此键值对，包含正则表达式，和提示 */
+                            regexp: /.+-VNFC$/,
+                            message: '请以-VNFC结尾.'
+                        }
+                    }
+                },
+                vnfAffiliation: {/*键名vnfAffiliation和input name值对应*/
+                    message: 'The NFaffiliation is not valid',
+                    validators: {
+//                        notEmpty: {/*非空提示*/
+//                            message: '不能为空'
+//                        },
+                        regexp: {/* 只需加此键值对，包含正则表达式，和提示 */
+                            regexp: /.+-VNF$/,
+                            message: '请以-VNF结尾.'
+                        }
+                    }
+                },
+                endPointId:{/*键名endPointId和input name值对应*/
+                    message: 'The endPointId is not valid',
+                    validators: {
+//                        notEmpty: {/*非空提示*/
+//                            message: '不能为空'
+//                        },
+                        regexp: {/* 只需加此键值对，包含正则表达式，和提示 */
+                            regexp: /.+-PORTAL$/,
+                            message: '请以-PORTAL结尾.'
+                        }
+                    }
+                }
 
-
-    //给每个input绑定丧失焦点事件
-//VNFC
-$('input[name="vnfcTypeId"]').blur(function () {
-    var v=$(this).val();
-    var reg=/.+-VNFC$/;
-    if(!reg.test(v)){
-        $(this).next().html('✘输入有误,请重新输入');
-        $(this).next().css('color','red');
-    }else{
-        $(this).next().html('✔');
-        $(this).next().css('color','green');
-         VNFCI=true;
-
-    }
-});
-//VNF
-$('input[name="vnfAffiliation"]').blur(function () {
-    var v=$(this).val();
-    var reg=/.+-VNF$/;
-    if(!reg.test(v)){
-        $(this).next().html('✘输入有误,请重新输入');
-        $(this).next().css('color','red');
-    }else{
-        $(this).next().html('✔');
-        $(this).next().css('color','green');
-        VNFI=true;
-
-    }
-});
-    //endPoint
-$('input[name="endPointId"]').blur(function () {
-    var v=$(this).val();
-    var reg=/.+-PORTAL$/;
-    if(!reg.test(v)){
-        $(this).next().html('✘输入有误,请重新输入');
-        $(this).next().css('color','red');
-    }else{
-        $(this).next().html('✔');
-        $(this).next().css('color','green');
-        ENDPOINTI=true;
-    }
-});
-
-    //绑定表单提交事件
-    $('button[name=saveData]').click(function(){
-        $("input").each(function () {
-            $(this).next().css('display','block');
+            }
         });
     });
 </script>
+
 </body>
 
 </html>
